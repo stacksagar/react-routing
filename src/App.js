@@ -9,11 +9,28 @@ export default class App extends Component {
   render() {
     return ( 
       <div>
+
+        <Route exact path="/" >
+          <Home />
+        </Route>
+
+        <Route exact path="/about" >
+          <About />
+        </Route>
+
+        <Route exact path="/blog" >
+          <Blog />
+        </Route>
+
+        <Route exact path="/contact" >
+          <Contact />
+        </Route>
+{/* 
         <Route exact path={`/about`} component={About} />
         <Route exact path={`/blog`} render={(routerProps) => < Blog routerProps={routerProps} />} />
         <Route exact path={`/`} render={(routerProps) => < Home routerProps={routerProps} />} />
         <Route exact path={`/contact`} render={(routerProps) => < Contact routerProps={routerProps} />} />    
-       
+        */}
         <ul> 
           <li><Link to="/">Home</Link></li>
           <li><Link to="/blog">Blog</Link></li>

@@ -1,6 +1,6 @@
 {
-  "homepage": "http://stacksagar.github.io/gb-react-routing",
-  "name": "first-react-app",
+  "homepage": "http://stacksagar.github.io/react-routing",
+  "name": "react-routing",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

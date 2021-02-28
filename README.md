@@ -1,3 +1,3 @@
 #Github Pages Routing Method!
 
-<a href="stacksagar.github.io/gb-react-routing" > see pages preview </a>
+<a href="stacksagar.github.io/react-routing" > see pages preview </a>
