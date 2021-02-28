@@ -10,19 +10,31 @@ export default class App extends Component {
     return ( 
       <div>
 
+        
+        <nav> 
+          <ul> 
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/blog">Blog</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/about">About</Link></li>
+          </ul>
+        </nav>
+
         <Route exact path="/" >
           <Home />
         </Route>
 
         <Route exact path="/about" >
+          <Home />
           <About />
         </Route>
 
-        <Route exact path="/blog" >
+        <Route exact path="/blog" > 
           <Blog />
         </Route>
 
         <Route exact path="/contact" >
+          <Home />
           <Contact />
         </Route>
 {/* 
@@ -31,12 +43,6 @@ export default class App extends Component {
         <Route exact path={`/`} render={(routerProps) => < Home routerProps={routerProps} />} />
         <Route exact path={`/contact`} render={(routerProps) => < Contact routerProps={routerProps} />} />    
         */}
-        <ul> 
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/blog">Blog</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-          <li><Link to="/about">About</Link></li>
-        </ul>
 
       </div>     
     );
