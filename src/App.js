@@ -20,7 +20,7 @@ export default class App extends Component {
           </ul>
         </nav>
 
-        <Route exact path="/" >
+        <Route exact path={`/`} >
           <Home />
         </Route>
 
